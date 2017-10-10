@@ -1,5 +1,4 @@
 node_modules
-public/bundle.js.map
 secrets.js
 yarn.lock
 .DS_Store
