@@ -2,10 +2,8 @@
 
 /* REUSABLE STYLE */
 $color-white-translucent: rgba(255, 255, 255, 0.3);
+$cyan: white;
 
-
-
-@media (min-width: 1451px) and (max-width: 1700px) {
 
   *{
     margin: 0;
@@ -35,13 +33,6 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
   }
 
-  .fullscreen-bg__video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-  }
 
   /* LANDING PAGE */
 
@@ -51,500 +42,467 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
     position: fixed;
   }
 
-  #everyone {
-    font-size: 2.85em;
-    opacity: 0;
-    margin-bottom: 30px;
+  #hi {
+    letter-spacing: .65em;
+    font-size: 2.1em;
+    text-decoration: none;
     text-align: center;
-    letter-spacing: .61em,
+    margin-bottom: 5vh;
+    -webkit-animation: letter-spacing 6s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: letter-spacing 6s; /* Firefox < 16 */
+      -ms-animation: letter-spacing 6s; /* Internet Explorer */
+       -o-animation: letter-spacing 6s; /* Opera < 12.1 */
+          animation: letter-spacing 6s;
   }
 
-  #parelax-logo {
-    font-size: 3.4em;
-    opacity: 0;
+  @keyframes letter-spacing {
+      from { letter-spacing: 0;
+              opacity: 0; }
+      to   { letter-spacing: .65em;
+              opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes letter-spacing {
+      from { letter-spacing: 0;
+              opacity: 0; }
+      to   { letter-spacing: .65em;
+              opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes letter-spacing {
+      from { letter-spacing: 0;
+              opacity: 0; }
+      to   { letter-spacing: .65em;
+              opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes letter-spacing {
+      from { letter-spacing: 0;
+              opacity: 0; }
+      to   { letter-spacing: .65em;
+              opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes letter-spacing {
+      from { letter-spacing: 0;
+              opacity: 0; }
+      to   { letter-spacing: .65em;
+              opacity: 1; }
+  }
+
+  #name {
+    text-decoration: none ;
+    font-size: 2.5em;
     text-align: center;
-    margin-left: 40px;
+    letter-spacing: .65em;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 6s; /* Firefox < 16 */
+      -ms-animation: fadein 6s; /* Internet Explorer */
+       -o-animation: fadein 6s; /* Opera < 12.1 */
+          animation: fadein 6s;
   }
 
-  #logo-border {
-    border: 5px white;
-    padding: 3.05em;
-    margin-top: 15%;
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 
-  #logo-border:hover {
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  #home-text {
+    padding: 3em;
+    position: absolute;
+    top: 35vh;
+    left: 30vw;
+      -webkit-transition: background-color 1s ease;
+         -moz-transition: background-color 1s ease;
+           -o-transition: background-color 1s ease;
+          -ms-transition: background-color 1s ease;
+              transition: background-color 1s ease;
+  }
+
+  #home-text:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
 
-  /* READY FORM */
+/* ABOUT */
 
-  #ready-form {
-    margin-top: 3em;
-    background-color: $color-white-translucent;
-    padding: 2em 3em;
-    text-align: left;
+#about-div {
+  padding: 3em;
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  width: 50vw;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#about-div:hover {
+  background-color: $color-white-translucent;
+}
+
+#about-header {
+  text-align: right;
+}
+
+#about-text {
+  font-size: 1.2em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#about-link {
+  padding-bottom: 1vh;
+  letter-spacing: .779em;
+  text-align: center;
+  border-bottom: 1.5px solid transparent;
+  -webkit-animation: about-link 6s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: about-link 6s; /* Firefox < 16 */
+    -ms-animation: about-link 6s; /* Internet Explorer */
+     -o-animation: about-link 6s; /* Opera < 12.1 */
+        animation: about-link 6s;
+}
+
+  @keyframes about-link {
+      from { opacity: 0;
+      letter-spacing: 0 }
+      to   { opacity: 1;
+      letter-spacing: .779em }
   }
 
-  #inputBG {
-    margin: 1em 1em 0 .5em;
+  /* Firefox < 16 */
+  @-moz-keyframes about-link {
+      from { opacity: 0;
+      letter-spacing: 0 }
+      to   { opacity: 1;
+      letter-spacing: .779em; }
   }
 
-  #complete {
-    text-align: right;
-    font-size: 3em;
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes about-link {
+      from { opacity: 0;
+      letter-spacing: 0 }
+      to   { opacity: 1;
+      letter-spacing: .779em; }
   }
 
-  .number {
-    font-size: 3em;
+  /* Internet Explorer */
+  @-ms-keyframes about-link {
+      from { opacity: 0;
+      letter-spacing: 0 }
+      to   { opacity: 1;
+      letter-spacing: .779em; }
   }
 
-  #radios {
-    margin-top: 5em;
-    margin-left: 3em;
+  /* Opera < 12.1 */
+  @-o-keyframes about-link {
+      from { opacity: 0;
+      letter-spacing: 0 }
+      to   { opacity: 1;
+      letter-spacing: .779em; }
   }
 
-  .left-side {
+#about-link:hover {
+  border-bottom-color: white;
+  /*background-color: $color-white-translucent;*/
+}
 
+.link {
+  text-decoration: none !important;
+}
+
+/* CONTACT */
+
+#contact-header {
+  padding-bottom: 1vh;
+  margin-bottom: 5vh;
+  letter-spacing: .1em;
+  text-align: center;
+
+}
+
+#contact-div {
+  position: absolute;
+  top: 15vh;
+  width: 50vw;
+  left: 25vw;
+  padding: 5vh 5vw;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact-div:hover {
+  background-color: $color-white-translucent;
+}
+
+.form-group {
+  margin-bottom: 3vh;
+  color: #BB7D73;
+  margin-left: 2vw;
+}
+
+form {
+  max-width: 50vw;
+  border-bottom: white 2px solid;
+  padding-bottom: 2vh;
+  margin-bottom: 5vh;
+  display: none;
+}
+
+#form-name, #form-email {
+  width: 24.5vw;
+  display: inline-block;
+}
+
+#form-email {
+  margin-left: 1vw;
+}
+
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.form-control {
+  background-color: rgba(274, 274, 274, 0.8);
+}
+
+#flash-msg {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+}
+
+.img-width {
+  width: 16vw;
+}
+
+.chat-btn {
+  position: relative;
+  width: 100%;
+  background-color: rgba(274, 274, 274, 0.5);
+  color: white;
+  font-size: 1.4m;
+  padding: .8em 1.6em;
+}
+
+.chat-btn:hover {
+  background-image: url("/img/btn-bg.gif");
+  color: #5E5B7E;
+}
+
+#contact-link {
+  position: absolute;
+  vertical-align: bottom;
+}
+
+.contact-img {
+  margin-right: 6vw;
+  width:5vw;
+  display: inline-block;
+  opacity: .7;
+}
+
+.contact-img:hover {
+  opacity: 1;
+}
+
+#email-img {
+  width: 4vw;
+  margin-left: 7vw;
+}
+
+#contact-msg {
+  margin-top: 5vh;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  width: 30vw;
+  left: 5vw;
+  position: relative;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+  #landing-bg {
+    display: none;
   }
 
-  .right-side {
-    margin-left: 2.1em;
-    padding-left: 1em;
-  }
-
-  #background-check {
-    margin-top: 60px !important;
-    margin-bottom: 0;
-  }
-
-  #submit {
-    margin-top: 3em;
-    text-align: right;
-    color: #9E7CA4;
-    margin-left: -10%;
-    padding: .5em 1em;
-    font-size: 1.5em;
-    letter-spacing: .1em;
-    margin-bottom: 2em;
-  }
-
-  #submit:hover {
-    background-image: url('/img/btn-bg.gif');
-    background-repeat: no-repeat;
+  body {
+    background-image: url("/img/pinksky.jpg");
     background-position: center;
-    border-color: white;
+    background-repeat: no-repeat;
   }
 
-  #add {
-    text-align: right;
-    color: #9E7CA4;
+  #home-text {
     position: absolute;
-    right: 6.5em;
-    margin-top: 0em;
+    width: 90vw;
+    padding: 5vh 5vw;
+    left: 5vw;
+    top:25vh;
+    background-color: $color-white-translucent;
+    min-height: 45vh;
   }
 
-  #add:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-      background-repeat: no-repeat;
-    background-position: center;
+  #about-div {
+    padding: 2vh 4vw;
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+    width: 70vw;
+    border: 1px solid white;
   }
 
-  /* RESULTS */
-
-  #code {
-    z-index: 1000;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    color: #9E7CA4;
+  #contact-div {
+    position: absolute;
+    top: 15vh;
+    width: 80vw;
+    left: 10vw;
+    padding: 2vh 4vw;
   }
 
-  #code:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
+  #contact-msg {
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    width: 100%;
+    left: 0;
   }
 
-  #code-box {
-    background-image: url('/img/pinksky.jpg');
-    margin-top: 50px;
-    z-index: 100;
-    padding: 2em 3em;
-    color: #9E7CA4 !important;
+  .contact-img {
+    margin-right: 0vw;
+    width:15vw;
+    display: inline-block;
+    opacity: .7;
+    margin-left: 6vw;
   }
 
-  .inner-code {
-    padding: 2em 2em;
-    background-color: rgba(255, 255, 255, 0.2) !important;
-  }
 
-  .your-code {
-    text-align: right;
-    margin-bottom: -.3em;
+  #email-img {
+    width: 14vw;
+    margin-left: 7vw;
   }
 
 }
 
-@media (min-width: 1701px) {
-
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    color: red;
-  }
-
-  .italic {
-    font-style: italic;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
-  .fancy-type {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .caps {
-    text-transform: uppercase;
-  }
-
-  .fullscreen-bg__video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-  }
-
-  /* LANDING PAGE */
+@media all and (max-width: 700px) {
 
   #landing-bg {
-    width: 100%;
-    z-index: -100;
-    position: fixed;
+    display: none;
   }
 
-  #everyone {
-    font-size: 2.85em;
-    opacity: 0;
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: .61em,
-  }
-
-  #parelax-logo {
-    font-size: 3.4em;
-    opacity: 0;
-    text-align: center;
-    margin-left: 40px;
-  }
-
-  #logo-border {
-    border: 5px white;
-    padding: 3.05em;
-    margin-top: 15%;
-  }
-
-  #logo-border:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  /* READY FORM */
-
-  #ready-form {
-    margin-top: 3em;
-    background-color: $color-white-translucent;
-    padding: 2em 3em;
-    text-align: left;
-  }
-
-  #inputBG {
-    margin: 1em 1em 0 .5em;
-  }
-
-  #complete {
-    text-align: right;
-    font-size: 3em;
-  }
-
-  .number {
-    font-size: 3em;
-  }
-
-  #radios {
-    margin-top: 5em;
-    margin-left: 3em;
-  }
-
-  .left-side {
-
-  }
-
-  .right-side {
-    margin-left: 2.1em;
-    padding-left: 1em;
-  }
-
-  #background-check {
-    margin-top: 60px !important;
-    margin-bottom: 0;
-  }
-
-  #submit {
-    margin-top: 3em;
-    text-align: right;
-    color: #9E7CA4;
-    margin-left: -10%;
-    padding: .5em 1em;
-    font-size: 1.5em;
-    letter-spacing: .1em;
-    margin-bottom: 2em;
-  }
-
-  #submit:hover {
-    background-image: url('/img/btn-bg.gif');
-    background-repeat: no-repeat;
+  body {
+    background-image: url("/img/pinksky.jpg");
     background-position: center;
-    border-color: white;
   }
 
-  #add {
-    text-align: right;
-    color: #9E7CA4;
+  #home-text {
     position: absolute;
-    right: 10em;
-    margin-top: 0em;
+    width: 90vw;
+    padding: 5vh 5vw;
+    left: 5vw;
+    top:25vh;
+    background-color: $color-white-translucent;
+    min-height: 45vh;
   }
 
-  #add:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-      background-repeat: no-repeat;
-    background-position: center;
+  #hi {
+    font-size: 1em;
   }
 
-  /* RESULTS */
-
-  #code {
-    z-index: 1000;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    color: #9E7CA4;
+  #name {
+    font-size: 2em;
+    line-height: 2.5em;
   }
 
-  #code:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
+  /* ABOUT */
+
+  #about-div {
+    padding: 2vh 4vw;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    border: 1px solid white;
   }
 
-  #code-box {
-    background-image: url('/img/pinksky.jpg');
-    margin-top: 50px;
-    z-index: 100;
-    padding: 2em 3em;
-    color: #9E7CA4 !important;
+  #about-link {
+    padding-bottom: 1vh;
+    letter-spacing: .3em;
+    text-align: center;
   }
 
-  .inner-code {
-    padding: 2em 2em;
-    background-color: rgba(255, 255, 255, 0.2) !important;
+  /* CONTACT */
+
+  #contact-div {
+    position: absolute;
+    top: 15vh;
+    width: 80vw;
+    left: 10vw;
+    padding: 2vh 4vw;
   }
 
-  .your-code {
-    text-align: right;
-    margin-bottom: -.3em;
+  #contact-msg {
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    width: 100%;
+    left: 0;
   }
 
+  .contact-img {
+    margin-right: 0vw;
+    width:15vw;
+    display: inline-block;
+    opacity: .7;
+    margin-left: 6vw;
+  }
+
+
+  #email-img {
+    width: 14vw;
+    margin-left: 7vw;
+  }
 }
 
 
-
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-  }
-
-  .italic {
-    font-style: italic;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
-  .fancy-type {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .caps {
-    text-transform: uppercase;
-  }
-
-  .fullscreen-bg__video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-  }
-
-  /* LANDING PAGE */
-
-  #landing-bg {
-    width: 100%;
-    z-index: -100;
-    position: fixed;
-  }
-
-  #everyone {
-    font-size: 2.47em;
-    opacity: 0;
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: .61em,
-  }
-
-  #parelax-logo {
-    font-size: 3em;
-    opacity: 0;
-    text-align: center;
-  }
-
-  #logo-border {
-    border: 5px white;
-    padding: 3.05em;
-    margin-top: 15%;
-  }
-
-  #logo-border:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  /* READY FORM */
-
-  #ready-form {
-    margin-top: 3em;
-    background-color: $color-white-translucent;
-    padding: 2em 3em;
-    text-align: left;
-  }
-
-  #inputBG {
-    margin: 1em 1em 0 .5em;
-  }
-
-  #complete {
-    text-align: right;
-    font-size: 3em;
-  }
-
-  .number {
-    font-size: 3em;
-  }
-
-  #radios {
-    margin-top: 5em;
-    margin-left: 3em;
-  }
-
-  .left-side {
-
-  }
-
-  .right-side {
-    margin-left: 2.1em;
-    padding-left: 1em;
-  }
-
-  #background-check {
-    margin-top: 60px !important;
-    margin-bottom: 0;
-  }
-
-  #submit {
-    margin-top: 3em;
-    text-align: right;
-    color: #9E7CA4;
-    margin-left: -10%;
-    padding: .5em 1em;
-    font-size: 1.5em;
-    letter-spacing: .1em;
-    margin-bottom: 2em;
-  }
-
-  #submit:hover {
-    background-image: url('/img/btn-bg.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    border-color: white;
-  }
-
-  #add {
-    text-align: right;
-    color: #9E7CA4;
-    position: absolute;
-    right: 5.7em;
-    margin-top: 0em;
-  }
-
-  #add:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-      background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  /* RESULTS */
-
-  #code {
-    z-index: 1000;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    color: #9E7CA4;
-  }
-
-  #code:hover {
-    background-image: url('/img/btn-bg.gif');
-    border-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  #code-box {
-    background-image: url('/img/pinksky.jpg');
-    margin-top: 50px;
-    z-index: 100;
-    padding: 2em 3em;
-    color: #9E7CA4 !important;
-  }
-
-  .inner-code {
-    padding: 2em 2em;
-    background-color: rgba(255, 255, 255, 0.2) !important;
-  }
-
-  .your-code {
-    text-align: right;
-    margin-bottom: -.3em;
-  }
 

@@ -6,8 +6,8 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import store from './store';
 import Main from './components/Main';
 import Home from './components/Home';
-import ReadyContainer from './containers/ReadyContainer';
-import ResultContainer from './containers/ResultContainer';
+import About from './components/About';
+import Contact from './components/Contact'
 import $ from 'jquery';
 
 
@@ -17,9 +17,9 @@ ReactDOM.render(
       <Route path="/" component={Main}>
         <IndexRoute component={Home} />
         <Route path="/home" component={Home} />
-        <Route path="/ready" component={ReadyContainer} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
       </Route>
-      <Route path="/result" component={ResultContainer} />
     </Router>
   </Provider>,
   document.getElementById('app')

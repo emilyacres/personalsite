@@ -5,13 +5,9 @@ import { Link } from 'react-router';
 
 export default function Home () {
   return (
-      <div>
-        <div className="col-lg-3"></div>
-        <Link to="/ready"><div className="col-lg-6" id="logo-border">
-          <h1 className="fancy-type caps" id="everyone">Everyone Just</h1>
-          <h1 className="fancy-type caps" id="parelax-logo">Parelax</h1>
+        <Link to="/about"><div id="home-text">
+          <h1 className="fancy-type caps" id="hi">hi my name is</h1>
+          <h1 className="fancy-type caps" id="name">emily grace</h1>
         </div></Link>
-        <div className="col-lg-3"></div>
-      </div>
   );
 }
